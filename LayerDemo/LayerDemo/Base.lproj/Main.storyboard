@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g7P-lc-d0v">
+                                <rect key="frame" x="240" y="360" width="120" height="120"/>
+                                <color key="backgroundColor" red="1" green="0.68589005950000004" blue="0.5318485114" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="8kE-pK-XHL"/>
+                                    <constraint firstAttribute="height" constant="120" id="DLi-98-RzC"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X9B-od-PE8">
+                                <rect key="frame" x="240" y="120" width="120" height="120"/>
+                                <color key="backgroundColor" red="1" green="0.68589005950000004" blue="0.5318485114" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="Mxr-XM-Q9t"/>
+                                    <constraint firstAttribute="width" constant="120" id="WTh-J6-2D7"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="X9B-od-PE8" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-120" id="1fZ-e8-xkK"/>
+                            <constraint firstItem="X9B-od-PE8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="415-md-UBl"/>
+                            <constraint firstItem="g7P-lc-d0v" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="120" id="7vJ-Xg-AS0"/>
+                            <constraint firstItem="g7P-lc-d0v" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="96O-UX-3jh"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bottomView" destination="g7P-lc-d0v" id="M7s-yx-iWd"/>
+                        <outlet property="topView" destination="X9B-od-PE8" id="dm3-Dw-KZm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
